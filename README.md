@@ -1,3 +1,22 @@
+# Goal
+
+- Dapp should interact with simple SC.
+- SC should emit Events with function call details.
+- Event listeners should pick up data from emitted events and:
+- store it in a database
+- database should be indexed by ??
+- Dapp should display data from database in a table.
+- Entire setup should be runnable locally.
+- Use postgreSQL, Inngest, Turborepo, Next.js, Foundry.
+
+
+# How to
+- Deploy a a simple SC to mainnet, testnet or local network (wherever is sufficient) to test.
+- Run postgres via docker.
+- Run Inngest via ??
+- Abis should be available for frontend via contracts (Foundry) package.
+
+
 # Turborepo starter
 
 This is an official starter Turborepo.
