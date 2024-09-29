@@ -1,0 +1,19 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "Contracts to facilitate Tiny Dapp",
+  "author": "AndyOooh",
+  "license": "ISC",
+  "keywords": [
+    "solidity",
+    "foundry",
+    "dapp"
+  ],
+  "scripts": {
+    "build": "forge build",
+    "deploy": "forge deploy",
+    "format": "forge fmt",
+    "lint": "forge fmt --check",
+    "test": "forge test"
+  }
+}
