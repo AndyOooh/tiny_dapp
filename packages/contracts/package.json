@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "forge build",
+    "clean": "rm -rf out && rm -rf cache && rm -rf .turbo",
     "deploy": "forge deploy",
     "format": "forge fmt",
     "lint": "forge fmt --check",

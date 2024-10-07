@@ -2,10 +2,12 @@
   "name": "tiny_dapp",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "test": "turbo test",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "clean:root": "rm -rf node_modules && rm -rf .turbo",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" && turbo format"
   },
   "devDependencies": {
