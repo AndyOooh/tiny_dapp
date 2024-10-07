@@ -7,7 +7,7 @@
 - database should be indexed by ??
 - Dapp should display data from database in a table.
 - Entire setup should be runnable locally.
-- Use postgreSQL, Inngest, Turborepo, Next.js, Foundry.
+- Use postgreSQL, Inngest, Turborepo, Next.js, Foundry, wagmi, Viem, Prisma.
 
 
 # How to
