@@ -7,7 +7,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { Profile } from "./components/Profile";
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { darkTheme, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 
 export default function Home() {
   const queryClient = new QueryClient();
@@ -15,7 +15,9 @@ export default function Home() {
     <Theme accentColor='jade' grayColor='slate'>
       <WagmiProvider config={rainbowConfig}>
         <QueryClientProvider client={queryClient}>
-          <RainbowKitProvider modalSize='compact'>
+          <RainbowKitProvider
+            // modalSize='compact'
+            theme={darkTheme()}>
             <Flex px='0' direction='column' className='h-screen bg-purple-50/10'>
               <Header />
               <main>Hello</main>
