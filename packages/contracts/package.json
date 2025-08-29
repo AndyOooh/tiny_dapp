@@ -12,9 +12,12 @@
   "scripts": {
     "build": "forge build",
     "clean": "rm -rf out && rm -rf cache && rm -rf .turbo",
-    "deploy": "forge deploy",
+    "deploy1": "forge deploy",
+    "deploy": "dotenv -- forge script script/Counter.s.sol:CounterScript --rpc-url ${RPC_URL_ARBITRUM} --broadcast",
+    "deploy2": "forge script script/Counter.s.sol:CounterScript --rpc-url ${RPC_URL_ARBITRUM} --private-key ${PRIVATE_KEY} --broadcast",
     "format": "forge fmt",
     "lint": "forge fmt --check",
-    "test": "forge test"
+    "test": "forge test",
+    "verify": "forge verify-contract 0xf36cCf1363611c55b969268b34987Bf0B71c65da Counter --chain arbitrum --etherscan-api-key $ARBISCAN_API_KEY --watch"
   }
 }

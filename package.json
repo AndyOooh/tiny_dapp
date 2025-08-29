@@ -15,6 +15,9 @@
     "turbo": "^2.1.2",
     "typescript": "^5.4.5"
   },
+  "prettier": {
+    "printWidth": 100
+  },
   "packageManager": "pnpm@9.12.1",
   "engines": {
     "node": ">=18"

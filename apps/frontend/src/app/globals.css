@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Add this new CSS */
+.noise {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.4;
+  /* background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); */
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIG9wYWNpdHk9IjAuNTgiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMTMzIiBudW1PY3RhdmVzPSI0IiBzZWVkPSIxNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXN1bHQ9InR1cmJ1bGVuY2UiPjwvZmVUdXJidWxlbmNlPgoJPGZlU3BlY3VsYXJMaWdodGluZyBzdXJmYWNlU2NhbGU9IjE5IiBzcGVjdWxhckNvbnN0YW50PSIxLjIiIHNwZWN1bGFyRXhwb25lbnQ9IjIwIiBsaWdodGluZy1jb2xvcj0iI2ZmZmZmZiIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgcmVzdWx0PSJzcGVjdWxhckxpZ2h0aW5nIj4KICAgIAkJPGZlRGlzdGFudExpZ2h0IGF6aW11dGg9IjMiIGVsZXZhdGlvbj0iNjkiPjwvZmVEaXN0YW50TGlnaHQ+CiAgCTwvZmVTcGVjdWxhckxpZ2h0aW5nPgogIAo8L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiIGZpbGw9IiMwMDAwMDBmZiI+PC9yZWN0PjxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiBmaWx0ZXI9InVybCgjbm5ub2lzZS1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+");
+}
+
+@layer base {
+}
+
+/* body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.68;
+  background-image: url("/noise.svg");
+  background-repeat: repeat;
+  background-size: 700px 700px;
+} */
+
+body {
+  /* background-color: green; */
+  /* background: url("/noise.svg"); */
+  /* background: radial-gradient(circle at 50% 50%, rgba(27, 27, 27, 0), rgba(0,0,0, 0.7), rgba(0,0,0, 1)), url(https://raw.githubusercontent.com/juxtopposed/dailydesigncode/main/ddc-1/src/noise.svg); */
+  /* background: radial-gradient(circle at 50% 50%, rgba(27, 27, 27, 0), rgba(0,0,0, 0.7), rgba(0,0,0, 1)), url(https://raw.githubusercontent.com/juxtopposed/dailydesigncode/main/ddc-1/src/noise.svg); */
+  /* background: radial-gradient(
+      circle at 50% 50%,
+      rgba(85, 6, 153, 0.5),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 1)
+    ),
+    url("/noise.svg"); */
+  /* background: radial-gradient(
+      circle,
+      rgba(255, 80, 253, 0.24084848783263302) 1%,
+      rgba(6, 6, 6, 0.5013526895133054) 100%
+      ), */
+  /* background: url("/noise-red.svg"); */
+  background: url("/noise-bg-black-gear.svg");
+  /* background: radial-gradient(circle, rgba(5, 5, 5, 0.8) 0%, rgba(37, 37, 37, 0.6) 100%),
+    url("/noise-bg-black.svg"); */
+  /* background: radial-gradient(circle, rgba(5, 5, 5, 0.8) 0%, rgba(37, 37, 37, 0.6) 100%),
+    url("/noise-red.svg"); */
+  /* url("/noise-teal.svg"); */
+  /* background: radial-gradient(
+      circle,
+      rgba(255, 43, 221, 0.26045633096988796) 1%,
+      rgba(6, 6, 6, 0.5013526895133054) 46%
+    ),
+    url("/noise-teal.svg"); */
+  /* background: radial-gradient(
+      circle,
+      rgba(255, 43, 221, 0.26045633096988796) 1%,
+      rgba(6, 6, 6, 0.5013526895133054) 46%
+    ),
+    url("/noise.svg"); */
+}
